@@ -58,12 +58,6 @@ Additional dependencies for the Xiaomi Pocophone F1 / OnePlus 6 / OnePlus 6T:
 $ git submodule update --init --recursive
 Downloads the projects to build
 
-### zouboan
-cd src
-patch -p0 < volumecontrol.patch
-cd ..
-### zouboan
-
 $ make -j8 pine64-pinephone.img.xz
 Builds everything needed for the pinephone image...
 

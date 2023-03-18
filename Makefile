@@ -290,6 +290,7 @@ src/u-boot:
 	@wget https://ftp.denx.de/pub/u-boot/u-boot-2020.04.tar.bz2
 	@tar -xf u-boot-2020.04.tar.bz2 --strip-components 1 -C src/u-boot
 	@cd src/u-boot && patch -p1 < ../u-boot-pinephone.patch
+	@cd .. && patch -p0 < volumecontrol.patch
 
 src/u-boot-librem5:
 	@echo "WGET  u-boot-librem5"
